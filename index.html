@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css">
+    <h1 id="title">Pusheen Cafe Survey Form</h1>
+  </head>
+  <body>
+    <p id="description">Help us create the coolest drink this summer!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label id="name-label">Name<input id="name" type="text" placeholder="name" required /></label>
+        <label id="email-label">Email<input id="email" type="email" placeholder="email" required /></label>
+        <label id="number-label">Raffle Number<input id="number" type="number" placeholder="Pick a # between 10-100 to win a free drink!" min="10" max="100" /></label>
+      </fieldset>
+      <fieldset>
+        <h2 id="header">Flavor Theme</h2>
+        <p>Choose between our summer flavor profiles.</p>
+        <select id="dropdown">
+          <option>Berry Iced Drink</option>
+          <option>Melon Iced Drink</option>
+          <option>Mint Slush Drink</option>
+          <option>Cucumber Slush Drink</option>
+        </select>
+      </fieldset>
+      <fieldset>
+        <h2 id="header">Bubble Base</h2>
+        <label for="lychee-jelly"><input type="radio" id="lychee-jelly" class="inline" name="radio" value="lychee-jelly"> Lychee Jelly</input></label>
+        <label for="mint-boba"><input type="radio" id="mint-boba" class="inline" name="radio" value="mint-boba"> Mint Boba</input></label>
+        <label for="cocout-jelly"><input type="radio" id="coconut-jelly" class="inline" name="radio" value="coconut-jelly"> Coconut Jelly</input></label>
+      </fieldset>
+      <fieldset>
+        <h2 id="header">Topper Options</h2>
+        <section class="topper-options">
+          <label for="strawberries"><input type="checkbox" id="strawberries" name="radio" class="inline" value="strawberries"> Strawberries</input></label>
+          <label for="melon-balls"><input type="checkbox" id="melon-balls" name="radio" class="inline" value="melon-balls"> Melon Balls</input></label>
+          <label for="cucumber"><input type="checkbox" value="cucumber" name="radio" class="inline" value="cucumber"> Cucumber</input></label>
+        </section>
+        <section class="topper-options">
+          <label for="mint"><input type="checkbox" id="mint" name="radio" class="inline" value="mint"> Fresh Mint</input></label>
+          <label for="rasberries"><input type="checkbox" id="rasberries" name="radio" class="inline" value="rasberries"> Rasberries</input></label>
+          <label for="coconut"><input type="checkbox" id="coconut" name="radio" class="inline" value="coconut"> Coconut</input></label>
+        </section>
+      </fieldset>
+      <fieldset>
+        <h2 id="header">Any other ideas or comments?</h2>
+        <textarea id="say-anything" class="say-anything" name="bio" rows="5" cols="30" placeholder="Please make the drinks cuter..."></textarea>
+      </fieldset>
+      <input type="submit" id="submit" value="Submit" class="submit" />
+    </form>
+  </body>
