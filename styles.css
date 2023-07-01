@@ -6,7 +6,7 @@ body {
 	font-family: Fantasy;
 	font-size: 20px;
 	background-image: url(https://pusheen.com/wp-content/uploads/2023/03/Pusheens_Boba.gif);
-	background-size: cover;
+	background-size: center;
 	background-position: center center;
 	background-attachment: fixed;
 }
